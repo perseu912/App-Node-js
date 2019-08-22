@@ -1,0 +1,19 @@
+{
+  "name": "tools",
+  "version": "1.0.0",
+  "description": "tools from my app's ",
+  "main": "tools.js",
+  "scripts": {
+    "test": "nodemon test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/perseu912/App-Node-js.git"
+  },
+  "author": "perseu912",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/perseu912/App-Node-js/issues"
+  },
+  "homepage": "https://github.com/perseu912/App-Node-js#readme"
+}
