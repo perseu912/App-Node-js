@@ -97,7 +97,7 @@ class Fun{
 }
 
 const timeProcess = () =>{
-    return process.uptime
+    return process.uptime()
 }
 
 const exit =() => {
