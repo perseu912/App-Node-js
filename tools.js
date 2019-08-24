@@ -1,5 +1,17 @@
 const os = require('os');
 const fs = require('fs');
+const fetch = require('node-fetch')
+const request = require('request')
+
+const url = async (url) => {
+	let timeInit = Date.now()
+	status = await fetch(url)
+	.then((res)=>{
+	   return res.status
+	})
+	let timeEnd = Date.now() - timeInit
+	return {ping:timeEnd, status:status}
+}
 
 const datta = () => {
 	now = new Date
@@ -84,9 +96,13 @@ class Fun{
 	}
 }
 
+const timeProcess = () =>{
+    return process.uptime
+}
 
-
-
+const exit =() => {
+   return process.exit()
+}
 
 //console.log(os)
 
@@ -99,6 +115,5 @@ class Fun{
 //log(time.end())
 
 
-console.log(datta)
-module.exports = {log, time, myIp, memFree, datta}
-    
+console.log(datta())
+module.exports = {url, log, time, myIp, memFree, datta, timeProcess, exit}
